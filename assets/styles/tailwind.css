@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bubbly-btn {
+    @apply flex items-center justify-center p-3 appearance-none text-[#ad0065] rounded-xl uppercase font-normal cursor-pointer relative focus:outline-0 active:scale-90 active:bg-[#0f0e17];
+    transition: transform ease-in 100ms, box-shadow ease-in 250ms;
+  }
+
+  .bubbly-btn:active {
+    box-shadow: 0 2px 25px rgba(208, 23, 119, 0.648);
+  }
+  
+  .bubbly-btn::before,
+  .bubbly-btn::after {
+    @apply absolute content-[''] block w-[140%] h-full left-[-20%] transition-all ease-in-out duration-700 bg-no-repeat pointer-events-none z-50;
+  }
+
+  .bubbly-btn::before {
+    @apply hidden -top-3/4;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%),
+      radial-gradient(circle, #ff8906 20%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ff8906 15%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, #ff8906 20%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, #ff8906 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%,
+      15% 15%;
+  }
+
+  .bubbly-btn::after {
+    @apply hidden -bottom-3/4;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ff8906 15%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, #ff8906 20%, transparent 20%),
+      radial-gradient(circle, #ff0081 20%, transparent 20%),
+      radial-gradient(circle, #ff8906 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+      20% 20%;
+  }
+
+  .bubbly-btn.animate::before {
+    @apply block;
+    animation: top-bubbles ease-in-out 750ms forwards;
+  }
+
+  .bubbly-btn.animate::after {
+    @apply block;
+    animation: bottom-bubbles ease-in-out 750ms forwards;
+  }
+
+  .s-card {
+    @apply relative block h-full rounded-xl overflow-hidden;
+  }
+
+  .s-card-image {
+    @apply w-full h-auto;
+  }
+
+  .s-card-overlay {
+    @apply absolute bottom-0 left-0 right-0 z-10 rounded-tl-[40px] translate-y-full transition-all ease-in-out duration-200 bg-bgdark;
+  }
+
+  .s-card:hover .s-card-overlay {
+    transform: translateY(0);
+  }
+
+  .s-card-header {
+    @apply relative flex gap-2 p-4 rounded-tl-[40px] -translate-y-full transition-all duration-200 ease-in-out bg-bgdark;
+  }
+
+  .s-card-arc {
+    @apply h-20 w-20 absolute bottom-full right-0 z-10;
+  }
+
+  .s-card-arc path {
+    @apply fill-bgdark;
+  }
+
+  .s-card:hover .s-card-header {
+    @apply translate-y-0;
+  }
+
+  @keyframes top-bubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  @keyframes bottom-bubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  .typewritter h1 {
+    @apply overflow-hidden whitespace-nowrap my-0 mx-auto w-0;
+    border-right: 2px solid orange;
+    letter-spacing: 0.15em;
+    animation: typing 3500ms steps(40, end) forwards,
+      cursor-blink 750ms step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes cursor-blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: orange;
+    }
+  }
+}

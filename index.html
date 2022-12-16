@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/img/favicon-dark.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/img/favicon-dark.svg" type="image/icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <script src="/assets/js/app.js"></script>
+    <title>Ares Porfolio</title>
+  </head>
+  <body class="bg-bgdark font-subtitle">
+    <header
+      class="fixed top-0 left-0 w-full bg-white bg-opacity-75 dark:bg-[#17152393] z-40"
+    >
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-bgdark"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="/" class="flex items-center">
+            <img
+              src="/img/Ares Small Logo.svg"
+              class="h-24 mr-3"
+              alt="Ares Logo"
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-lg text-orange rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-orange dark:hover:bg-[#0b0226]"
+            aria-controls="navbar"
+            aria-expanded="false"
+            id="menu-toggle"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar">
+            <ul
+              class="flex flex-col p-4 mt-4 justify-center items-center border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-bgdark dark:bg-bgdark md:dark:bg-bgdark"
+            >
+              <li>
+                <a href="#home" class="bubbly-btn w-min hover:text-[#bf2290]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="bubbly-btn w-min hover:text-[#bf2290]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="bubbly-btn w-min hover:text-[#bf2290]"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="bubbly-btn w-min hover:text-[#bf2290]"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacto"
+                  class="bubbly-btn w-min hover:text-[#bf2290]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- --------- Showcase Area Section --------- -->
+      <section
+        class="w-100 h-screen overflow-hidden mt-20 flex flex-row justify-center items-center"
+        id="home"
+      >
+        <div
+          class="flex flex-col w-full h-screen justify-center items-center relative"
+        >
+          <div class="w-100 items-center flex flex-col justify-center">
+            <h2 class="text-3xl p-0 text-purple font-title font-bold">
+              Ares Miró
+            </h2>
+            <p class="text-lg mb-2 mt-2 text-text-dark font-subtitle">
+              I'm a front-end web developer.
+            </p>
+            <div
+              class="typewritter text-white text-2xl font-subtitle font-light"
+            >
+              <h1>Welcome to my website!</h1>
+            </div>
+            <div class="mt-6 flex items-center justify-center gap-3">
+              <a
+                href="mailto:aresmiros@gmail.com"
+                class="inline-block rounded-2xl text dark:text-text-light dark:bg-orange text-lg transition-all 0.3s py-2 px-4 font-semibold"
+                >Hire Me</a
+              >
+              <a href="/public/img/Ares Miro Front-End Developer copy.pdf">
+                <i
+                  class="fa-regular fa-circle-down text-orange ml-3 text-3xl flex justify-center items-center"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="w-[400px] justify-center items-center">
+            <img
+              src="/img/young-woman-laptop-dark.svg"
+              class="img"
+              alt="working-woman"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- --------- About Section --------- -->
+      <section
+        class="w-auto h- overflow-hidden flex flex-row justify-center items-center"
+        id="about"
+      >
+        <div
+          class="flex flex-col w-full h-screen justify-center items-center relative"
+        >
+          <div
+            class="w-auto flex flex-col justify-center items-center justify-self-center"
+          >
+            <h3
+              class="text-2xl font-normal font-subtitle p-0 text-text-dark pb-1"
+            >
+              About Me
+            </h3>
+            <h2 class="text-3xl font-subtitle font-light p-0 text-purple">
+              &lt;I code beautiful things&gt;
+            </h2>
+            <div class="mr-0 flex flex-col items-center justify-center p-10">
+              <p class="text-text-dark w-full text-lg">
+                I'm a Front-End Developer and UX Designer that has a serious
+                passion for animation and creating clean, intuitive and dynamic
+                websites.
+              </p>
+              <p class="text-text-dark w-full text-lg">
+                I enjoy bringing ideas that I have on my mind to life and
+                continue discovering and learning exciting new things.
+              </p>
+            </div>
+          </div>
+          <div class="w-[400px] justify-center items-center">
+            <img
+              src="/img/young-woman-working-dark.svg"
+              class="img-about"
+              alt="web"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- --------- Skills Section --------- -->
+      <section class="w-full h-auto">
+        <div class="skills-info">
+          <h2
+            class="text-purple font-subtitle text-2xl font-normal flex items-center justify-center pt-40 pb-10"
+            id="skills"
+          >
+            My Skills.
+          </h2>
+        </div>
+        <div
+          class="w-full h-full relative flex flex-wrap justify-center items-center"
+        >
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-20 h-20 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    d="M9.9,31.2,7.66,6H32.34L30.1,31.2,20,34Zm3.18-10.7H23.8l-.36,4L20,25.44h0l-3.45-.93L16.32,22h-3.1l.43,4.86L20,28.65h0l6.33-1.75.84-9.49H15.91l-.28-3.17H27.46l.27-3.09H12.25Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3
+                  class="flex justify-center items-center text-xl font-bold pt-4"
+                >
+                  HTML
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-20 h-20 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    d="M32.34,6,30.1,31.2,20,34,9.9,31.2,7.66,6ZM13.22,22l.43,4.86L20,28.65h0l6.33-1.75,1.4-15.75H12.25l.28,3.09H24.34l-.28,3.17H12.81l.27,3.09H23.8l-.36,4L20,25.44h0l-3.45-.93L16.32,22Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">CSS</h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="50px"
+                  height="50px"
+                >
+                  <path
+                    d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">
+                  JavaScript
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">
+                  Tailwind
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">
+                  Bootstrap
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">
+                  Git/Github
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 100 100"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M89,36h-6v-8c0-4.41-3.59-8-8-8H13c-4.41,0-8,3.59-8,8v34c0,4.41,3.59,8,8,8h23.56l-1.2,6H31c-1.1,0-2,0.9-2,2
+	                  c0,1.1,0.9,2,2,2h26c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2h-4.36l-1.2-6H65v4c0,3.31,2.69,6,6,6h18c3.31,0,6-2.69,6-6V42
+	                  C95,38.69,92.31,36,89,36z M39.44,76l1.2-6h6.72l1.2,6H39.44z M65,66H13c-2.21,0-4-1.79-4-4v-2h56V66z M65,42v14H9V28
+	                  c0-2.21,1.79-4,4-4h62c2.21,0,4,1.79,4,4v8h-8C67.69,36,65,38.69,65,42z M91,74c0,1.1-0.9,2-2,2H71c-1.1,0-2-0.9-2-2v-3h22V74z
+	                  M91,67H69V49h22V67z M91,45H69v-3c0-1.1,0.9-2,2-2h18c1.1,0,2,0.9,2,2V45z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">
+                  Responsive Web
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer m-5">
+            <div
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+            >
+              <div
+                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+              >
+                <svg
+                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="50px"
+                  height="50px"
+                >
+                  <path
+                    d="M43.03,27.802c-1.747,0.009-3.261,0.429-4.53,1.054c-0.464-0.926-0.934-1.741-1.013-2.347 c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125c-0.007-0.089-0.109-0.518-1.117-0.526 c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.296,0.865-0.416,1.49c-0.177,0.914-2.012,4.174-3.055,5.879 c-0.341-0.666-0.631-1.252-0.691-1.716c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125 c-0.007-0.089-0.109-0.518-1.117-0.526c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.21,0.888-0.416,1.49 c-0.207,0.602-2.647,6.039-3.286,7.448c-0.326,0.718-0.609,1.295-0.809,1.689c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.012,0.026-0.034,0.071c-0.171,0.335-0.273,0.521-0.273,0.521s0.001,0.003,0.003,0.007c-0.136,0.246-0.281,0.475-0.353,0.475 c-0.05,0-0.151-0.656,0.022-1.555c0.363-1.886,1.235-4.828,1.227-4.929c-0.004-0.052,0.162-0.564-0.57-0.833 c-0.711-0.26-0.965,0.174-1.03,0.175c-0.063,0.001-0.11,0.153-0.11,0.153s0.793-3.308-1.512-3.308c-1.44,0-3.436,1.576-4.42,3.004 c-0.62,0.338-1.948,1.063-3.357,1.837c-0.541,0.297-1.093,0.601-1.617,0.89c-0.036-0.039-0.071-0.079-0.108-0.118 c-2.794-2.981-7.958-5.089-7.739-9.096c0.08-1.457,0.586-5.293,9.924-9.946c7.649-3.812,13.773-2.763,14.831-0.438 c1.512,3.321-3.273,9.494-11.216,10.384c-3.027,0.339-4.62-0.834-5.017-1.271c-0.417-0.46-0.479-0.481-0.635-0.394 c-0.254,0.141-0.093,0.547,0,0.789c0.237,0.617,1.21,1.712,2.87,2.256c1.46,0.479,5.013,0.742,9.311-0.92 c4.813-1.862,8.571-7.041,7.468-11.37c-1.123-4.403-8.423-5.85-15.332-3.396c-4.112,1.461-8.563,3.754-11.764,6.747 c-3.806,3.56-4.412,6.658-4.162,7.952c0.889,4.6,7.228,7.595,9.767,9.815c-0.125,0.069-0.243,0.134-0.35,0.193 c-1.273,0.63-6.105,3.159-7.314,5.831c-1.371,3.031,0.218,5.206,1.271,5.499c3.26,0.907,6.606-0.725,8.404-3.407 c1.798-2.681,1.578-6.172,0.753-7.766c-0.01-0.02-0.022-0.039-0.032-0.059c0.329-0.195,0.664-0.392,0.996-0.587 c0.648-0.38,1.284-0.735,1.836-1.036c-0.309,0.846-0.535,1.86-0.653,3.325c-0.138,1.721,0.567,3.945,1.49,4.82 c0.406,0.385,0.895,0.394,1.205,0.394c1.074,0,1.564-0.893,2.103-1.95c0.662-1.296,1.249-2.804,1.249-2.804 s-0.737,4.075,1.271,4.075c0.731,0,1.467-0.949,1.795-1.432c0.001,0.005,0.001,0.008,0.001,0.008s0.019-0.031,0.056-0.095 c0.076-0.116,0.119-0.19,0.119-0.19s0.002-0.008,0.004-0.021c0.294-0.51,0.946-1.674,1.924-3.594 c1.263-2.48,2.475-5.586,2.475-5.586s0.113,0.76,0.482,2.015c0.217,0.739,0.679,1.556,1.043,2.339 c-0.293,0.407-0.473,0.64-0.473,0.64s0.002,0.004,0.005,0.012c-0.234,0.311-0.497,0.646-0.772,0.974 c-0.997,1.188-2.185,2.544-2.344,2.936c-0.187,0.461-0.143,0.801,0.219,1.073c0.264,0.199,0.735,0.23,1.227,0.197 c0.896-0.06,1.527-0.283,1.838-0.418c0.485-0.171,1.05-0.441,1.58-0.831c0.978-0.719,1.568-1.748,1.512-3.111 c-0.031-0.751-0.271-1.495-0.574-2.198c0.089-0.128,0.178-0.256,0.267-0.387c1.542-2.255,2.738-4.732,2.738-4.732 s0.113,0.76,0.482,2.015c0.187,0.636,0.556,1.329,0.887,2.009c-1.45,1.178-2.349,2.547-2.662,3.445 c-0.577,1.661-0.125,2.414,0.723,2.585c0.384,0.078,0.927-0.098,1.335-0.271c0.508-0.168,1.118-0.449,1.688-0.868 c0.978-0.719,1.919-1.726,1.862-3.089c-0.026-0.62-0.194-1.236-0.422-1.828c1.229-0.512,2.821-0.797,4.848-0.56 c4.349,0.508,5.202,3.223,5.039,4.359c-0.163,1.137-1.075,1.761-1.38,1.95c-0.305,0.189-0.398,0.254-0.372,0.394 c0.037,0.204,0.178,0.196,0.438,0.152c0.358-0.06,2.283-0.924,2.366-3.022C50.102,30.703,47.55,27.778,43.03,27.802z M9.512,39.102 c-1.44,1.571-3.453,2.165-4.316,1.665c-0.932-0.54-0.563-2.854,1.205-4.521c1.077-1.016,2.468-1.952,3.391-2.529 c0.21-0.126,0.518-0.312,0.893-0.537c0.062-0.035,0.097-0.055,0.097-0.055l-0.001-0.002c0.072-0.043,0.147-0.088,0.223-0.134 C11.647,35.363,11.024,37.453,9.512,39.102z M20.005,31.968c-0.502,1.223-1.552,4.352-2.191,4.184 c-0.549-0.144-0.883-2.523-0.11-4.863c0.389-1.178,1.22-2.586,1.709-3.133c0.786-0.879,1.652-1.167,1.862-0.81 C21.544,27.8,20.32,31.201,20.005,31.968z M28.675,36.105c-0.213,0.111-0.408,0.181-0.498,0.127 c-0.067-0.04,0.088-0.186,0.088-0.186s1.084-1.167,1.512-1.698c0.248-0.309,0.537-0.676,0.85-1.086 c0.003,0.041,0.004,0.082,0.004,0.122C30.627,34.782,29.277,35.725,28.675,36.105z M35.354,34.582 c-0.159-0.113-0.132-0.478,0.389-1.614c0.205-0.446,0.672-1.198,1.485-1.916c0.094,0.295,0.152,0.578,0.15,0.842 C37.367,33.653,36.112,34.31,35.354,34.582z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+            >
+              <div>
+                <h3 class="flex justify-center text-xl font-bold pt-4">Sass</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------- Portfolio Section --------- -->
+
+      <section
+        class="w-full h-auto grid items-center p-12 justify-center"
+        id="portfolio"
+      >
+        <div class="items-center flex flex-col justify-center w-full h-auto">
+          <div class="flex flex-col justify-center items-center">
+            <h3
+              class="text-2xl font-normal font-subtitle p-0 text-text-dark pb-1"
+            >
+              Portfolio
+            </h3>
+            <h2 class="text-3xl font-subtitle font-light p-0 text-purple">
+              My projects
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-fluid gap-20 items-center justify-center mt-14"
+          >
+            <div class="s-card" href="#">
+              <img
+                src="/img/All Ways Project.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        All Ways
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/Proyecto-AllWays"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://allways-agency.netlify.app/"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                  <svg
+                    class="w-9 h-9 flex justify-center items-center fill-cyan-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+                    ></path>
+                  </svg>
+                  <i class="text-yellow-400 fa-brands fa-js fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/BatataBit Porject.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        BatataBit
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/Batatabit"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://batatabit-project.netlify.app"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-blue-600 fa-brands fa-css3-alt fa-2x"></i>
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/img/Apple.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Apple Store Clone
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/Apple-Store-Clone"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="https://apple-ares.netlify.app/" target="_blank">
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-blue-600 fa-brands fa-css3-alt fa-2x"></i>
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                  <i class="text-yellow-400 fa-brands fa-js fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/Yard Sale Project.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Yard Sale
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/Yard-Sale"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://yard-sale-ares.netlify.app/"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-blue-600 fa-brands fa-css3-alt fa-2x"></i>
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                  <i class="text-yellow-400 fa-brands fa-js fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/Heladeria.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Ice Cream Website
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/Ice-Cream-Website"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://dynamic-torrone-da3bb4.netlify.app/"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-blue-600 fa-brands fa-css3-alt fa-2x"></i>
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/portf-1.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Bienes Raices
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/fin-raices"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://ares-bienes-raices.netlify.app/"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-pink-400 fa-brands fa-sass fa-2x"></i>
+
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                  <i class="text-yellow-400 fa-brands fa-js fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/Videogames.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Videogames Blog
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a
+                      href="https://github.com/aresmiiro/10Proyecto.-Blog-Videojuegos"
+                      target="_blank"
+                    >
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a
+                      href="https://blog-videojuegos-ares.netlify.app/"
+                      target="_blank"
+                    >
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-blue-600 fa-brands fa-css3-alt fa-2x"></i>
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="s-card" href="#">
+              <img
+                src="/public/img/Restaurant Sushi.png"
+                alt="portfolio-1"
+                class="s-card-image"
+              />
+              <div class="s-card-overlay">
+                <div class="s-card-header">
+                  <svg class="s-card-arc">
+                    <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                  </svg>
+                  <div class="s-card-header-text flex w-full">
+                    <div class="float-left">
+                      <h3
+                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                      >
+                        Sushi Restaurant
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="flex float-right gap-5 justify-center items-center"
+                  >
+                    <a href="https://github.com/aresmiiro/sushi-restaurant">
+                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="https://sushi-restaurant-ares.netlify.app">
+                      <i
+                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="s-card-description flex justify-center items-center gap-5 mt-2 mb-2"
+                >
+                  <i class="text-pink-400 fa-brands fa-sass fa-2x"></i>
+
+                  <i class="text-amber-600 fa-brands fa-html5 fa-2x"></i>
+                  <i class="text-yellow-400 fa-brands fa-js fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------- Contact Section --------- -->
+      <section
+        class="w-full h-auto flex items-center justify-center flex-col mt-48 mb-32"
+        id="contacto"
+      >
+        <div class="container-contact">
+          <div class="w-full flex items-center justify-center flex-col">
+            <h3
+              class="text-2xl font-normal font-subtitle text-text-dark flex justify-center pb-1 items-center"
+            >
+              Contact
+            </h3>
+            <h2
+              class="text-3xl font-subtitle font-light pl-3 text-purple flex justify-center items-center"
+            >
+              Get in touch
+            </h2>
+            <p
+              class="mr-0 flex flex-col items-center r p-10 text-text-dark justify-center item-center text-lg"
+            >
+              If you wanna get in touch, talk about a project or a job or just
+              sey hello, you can find me on:
+            </p>
+          </div>
+          <div
+            class="w-full h-60 flex item-center justify-center content-center gap-24 mt-5"
+          >
+            <div class="">
+              <a
+                class="no-underline"
+                href="https://github.com/aresmiiro"
+                target="_blank"
+              >
+                <i
+                  class="text-text-dark hover:text-orange fab fa-github fa-2x"
+                ></i>
+              </a>
+            </div>
+            <div class="icon-container">
+              <a href="https://www.instagram.com/devaressm/" target="_blank">
+                <i
+                  class="text-text-dark hover:text-orange fab fa-instagram fa-2x"
+                ></i>
+              </a>
+            </div>
+            <div class="icon-container">
+              <a
+                href="https://www.linkedin.com/in/ares-mir%C3%B3-serra-454241170/"
+                target="_blank"
+              >
+                <i
+                  class="text-text-dark hover:text-orange fab fa-linkedin-in fa-2x"
+                ></i>
+              </a>
+            </div>
+            <div class="icon-container">
+              <a href="mailto:aresmiros@gmail.com">
+                <i
+                  class="text-text-dark hover:text-orange fa-solid fa-envelope fa-2x"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- --------- Footer Seccion --------- -->
+
+    <footer class="w-screen h-auto flex flex-col justify-center items-center">
+      <div
+        class="w-4/5 flex flex-col items-center justify-center shadow-pink mb-20"
+      >
+        <img
+          class="w-[250px] h-[250px] p-0 m-0"
+          src="/public/img/Ares Big Dark Mode.svg"
+          alt="logo ares"
+        />
+        <p class="text-text-dark text-lgs justify-center items-center mb-20">
+          &copy; Made with lots of love
+        </p>
+        <div class="mb-10">
+          <ul class="flex flex-row justify-center items-center">
+            <li>
+              <a
+                href="https://github.com/aresmiiro"
+                target="_blank"
+                class="m-4 text-text-dark w-8 h-8"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/devaressm/"
+                target="_blank"
+                class="m-4 text-text-dark w-8 h-8 justify-center item-center"
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ares-mir%C3%B3-serra-454241170/"
+                target="_blank"
+                class="m-4 text-text-dark w-8 h-8 justify-center item-centers"
+              >
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:aresmiros@gmail.com"
+                target="_blank"
+                class="m-4 text-text-dark w-8 h-8 justify-center item-center"
+              >
+                <i class="fa-solid fa-envelope fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
