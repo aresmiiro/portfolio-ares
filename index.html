@@ -38,12 +38,12 @@
     <script src="/assets/js/app.js"></script>
     <title>Ares Porfolio</title>
   </head>
-  <body class="bg-bgdark font-subtitle">
-    <header
-      class="fixed top-0 left-0 w-full bg-white bg-opacity-75 dark:bg-[#17152393] z-40"
-    >
+  <body
+    class="dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] dark:bg-bgdark font-subtitle dark"
+  >
+    <header class="fixed top-0 left-0 w-full z-40">
       <nav
-        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-bgdark"
+        class="b border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-white dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] dark:bg-bgdark"
       >
         <div
           class="container flex flex-wrap items-center justify-between mx-auto"
@@ -58,7 +58,7 @@
           <button
             data-collapse-toggle="navbar"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-lg text-orange rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-orange dark:hover:bg-[#0b0226]"
+            class="inline-flex items-center p-2 ml-3 text-lg rounded-lg md:hidden hover:bg-gray-100 focus:outline-none bg-transparent text-purple dark:text-orange dark:hover:bg-[#0b0226]"
             aria-controls="navbar"
             aria-expanded="false"
             id="menu-toggle"
@@ -80,38 +80,40 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar">
             <ul
-              class="flex flex-col p-4 mt-4 justify-center items-center border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-bgdark dark:bg-bgdark md:dark:bg-bgdark"
+              class="flex flex-col p-4 mt-4 justify-center items-center border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-transparent dark:bg-bgdark md:dark:bg-bgdark"
             >
               <li>
-                <a href="#home" class="bubbly-btn w-min hover:text-[#bf2290]"
+                <a href="#home" class="bubbly-btn w-min hover:text-orange"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="#about" class="bubbly-btn w-min hover:text-[#bf2290]"
+                <a href="#about" class="bubbly-btn w-min hover:text-orange"
                   >About</a
                 >
               </li>
               <li>
-                <a href="#skills" class="bubbly-btn w-min hover:text-[#bf2290]"
+                <a href="#skills" class="bubbly-btn w-min hover:text-orange"
                   >Skills</a
                 >
               </li>
               <li>
-                <a
-                  href="#portfolio"
-                  class="bubbly-btn w-min hover:text-[#bf2290]"
+                <a href="#portfolio" class="bubbly-btn w-min hover:text-orange"
                   >Portfolio</a
                 >
               </li>
               <li>
-                <a
-                  href="#contacto"
-                  class="bubbly-btn w-min hover:text-[#bf2290]"
+                <a href="#contacto" class="bubbly-btn w-min hover:text-orange"
                   >Contact</a
                 >
               </li>
             </ul>
+            <div class="flex item-end md:justify-center top-2 right-2">
+              <label class="theme-switch">
+                <input type="checkbox" />
+                <span class="theme-slider"></span>
+              </label>
+            </div>
           </div>
         </div>
       </nav>
@@ -124,24 +126,28 @@
         id="home"
       >
         <div
-          class="flex flex-col w-full h-screen justify-center items-center relative"
+          class="flex flex-col w-full h-screen justify-center items-center relative lg:flex-row lg:gap-32"
         >
           <div class="w-100 items-center flex flex-col justify-center">
-            <h2 class="text-3xl p-0 text-purple font-title font-bold">
+            <h2
+              class="text-3xl p-0 text-purple font-title font-bold lg:text-4xl"
+            >
               Ares Miró
             </h2>
-            <p class="text-lg mb-2 mt-2 text-text-dark font-subtitle">
+            <p
+              class="text-lg mb-2 mt-2 text-text-light dark:text-text-dark font-subtitle lg:text-2xl"
+            >
               I'm a front-end web developer.
             </p>
             <div
-              class="typewritter text-white text-2xl font-subtitle font-light"
+              class="typewritter text-text-light dark:text-white text-2xl font-subtitle font-light lg:text-3xl"
             >
               <h1>Welcome to my website!</h1>
             </div>
             <div class="mt-6 flex items-center justify-center gap-3">
               <a
                 href="mailto:aresmiros@gmail.com"
-                class="inline-block rounded-2xl text dark:text-text-light dark:bg-orange text-lg transition-all 0.3s py-2 px-4 font-semibold"
+                class="inline-block rounded-2xl text bg-orange dark:text-text-light dark:bg-orange text-lg transition-all 0.3s py-2 px-4 font-semibold"
                 >Hire Me</a
               >
               <a href="/public/img/Ares Miro Front-End Developer copy.pdf">
@@ -151,7 +157,7 @@
               </a>
             </div>
           </div>
-          <div class="w-[400px] justify-center items-center">
+          <div class="w-[400px] lg:w-[550px] justify-center items-center">
             <img
               src="/img/young-woman-laptop-dark.svg"
               class="img"
@@ -172,7 +178,7 @@
             class="w-auto flex flex-col justify-center items-center justify-self-center"
           >
             <h3
-              class="text-2xl font-normal font-subtitle p-0 text-text-dark pb-1"
+              class="text-2xl font-normal font-subtitle p-0 text-text-light dark:text-text-dark pb-1"
             >
               About Me
             </h3>
@@ -180,12 +186,12 @@
               &lt;I code beautiful things&gt;
             </h2>
             <div class="mr-0 flex flex-col items-center justify-center p-10">
-              <p class="text-text-dark w-full text-lg">
+              <p class="text-text-light dark:text-text-dark w-full text-lg">
                 I'm a Front-End Developer and UX Designer that has a serious
                 passion for animation and creating clean, intuitive and dynamic
                 websites.
               </p>
-              <p class="text-text-dark w-full text-lg">
+              <p class="text-text-light dark:text-text-dark w-full text-lg">
                 I enjoy bringing ideas that I have on my mind to life and
                 continue discovering and learning exciting new things.
               </p>
@@ -201,8 +207,8 @@
         </div>
       </section>
       <!-- --------- Skills Section --------- -->
-      <section class="w-full h-auto">
-        <div class="skills-info">
+      <section class="w-full h-auto flex-col justify-center items-center">
+        <div class="skills-info flex justify-center items-center">
           <h2
             class="text-purple font-subtitle text-2xl font-normal flex items-center justify-center pt-40 pb-10"
             id="skills"
@@ -211,17 +217,17 @@
           </h2>
         </div>
         <div
-          class="w-full h-full relative flex flex-wrap justify-center items-center"
+          class="w-full h-full relative flex flex-wrap lg:pl-32 lg:pr-32 justify-center items-center self-center"
         >
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
-                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+                class="transition-all flex items-center justify-center duration-500 dark:group-hover:text-orange w-full h-full rounded-md"
               >
                 <svg
-                  class="w-20 h-20 flex justify-center items-center fill-text-dark"
+                  class="w-20 h-20 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
                 >
@@ -232,11 +238,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-purple dark:bg-orange backdrop:dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
             >
               <div>
                 <h3
-                  class="flex justify-center items-center text-xl font-bold pt-4"
+                  class="flex justify-center items-center text-xl font-bold pt-4 text-white dark:text-text-light"
                 >
                   HTML
                 </h3>
@@ -245,13 +251,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-20 h-20 flex justify-center items-center fill-text-dark"
+                  class="w-20 h-20 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
                 >
@@ -262,22 +268,26 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">CSS</h3>
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
+                  CSS
+                </h3>
               </div>
             </div>
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-14 h-14 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
                   width="50px"
@@ -290,10 +300,12 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
                   JavaScript
                 </h3>
               </div>
@@ -301,13 +313,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -322,10 +334,12 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
                   Tailwind
                 </h3>
               </div>
@@ -333,13 +347,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
                 >
@@ -350,10 +364,12 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
                   Bootstrap
                 </h3>
               </div>
@@ -361,13 +377,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -382,10 +398,12 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
                   Git/Github
                 </h3>
               </div>
@@ -393,13 +411,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   enable-background="new 0 0 100 100"
                   viewBox="0 0 100 100"
@@ -415,10 +433,12 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">
+                <h3
+                  class="flex justify-center text-lg font-bold pt-4 text-white dark:text-text-light"
+                >
                   Responsive Web
                 </h3>
               </div>
@@ -426,13 +446,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center bg-bgdark transition-all duration-500 group-hover:translate-y-0 group-hover:bg-bgdark"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
             >
               <div
-                class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
+                class="transition-all flex items-center justify-center duration-500 dark:group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center fill-text-dark"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
                   width="50px"
@@ -445,10 +465,14 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
             >
               <div>
-                <h3 class="flex justify-center text-xl font-bold pt-4">Sass</h3>
+                <h3
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                >
+                  Sass
+                </h3>
               </div>
             </div>
           </div>
@@ -464,7 +488,7 @@
         <div class="items-center flex flex-col justify-center w-full h-auto">
           <div class="flex flex-col justify-center items-center">
             <h3
-              class="text-2xl font-normal font-subtitle p-0 text-text-dark pb-1"
+              class="text-2xl font-normal font-subtitle p-0 dark:text-text-dark text-text-light pb-1"
             >
               Portfolio
             </h3>
@@ -475,7 +499,7 @@
           <div
             class="grid grid-cols-fluid gap-20 items-center justify-center mt-14"
           >
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/img/All Ways Project.png"
                 alt="portfolio-1"
@@ -483,13 +507,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         All Ways
                       </h3>
@@ -502,14 +526,16 @@
                       href="https://github.com/aresmiiro/Proyecto-AllWays"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://allways-agency.netlify.app/"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -535,7 +561,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/BatataBit Porject.png"
                 alt="portfolio-1"
@@ -543,13 +569,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         BatataBit
                       </h3>
@@ -562,14 +588,16 @@
                       href="https://github.com/aresmiiro/Batatabit"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://batatabit-project.netlify.app"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -582,7 +610,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/img/Apple.png"
                 alt="portfolio-1"
@@ -590,13 +618,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Apple Store Clone
                       </h3>
@@ -609,11 +637,13 @@
                       href="https://github.com/aresmiiro/Apple-Store-Clone"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a href="https://apple-ares.netlify.app/" target="_blank">
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -627,7 +657,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/Yard Sale Project.png"
                 alt="portfolio-1"
@@ -635,13 +665,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Yard Sale
                       </h3>
@@ -654,14 +684,16 @@
                       href="https://github.com/aresmiiro/Yard-Sale"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://yard-sale-ares.netlify.app/"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -675,7 +707,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/Heladeria.png"
                 alt="portfolio-1"
@@ -683,13 +715,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Ice Cream Website
                       </h3>
@@ -702,14 +734,16 @@
                       href="https://github.com/aresmiiro/Ice-Cream-Website"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://dynamic-torrone-da3bb4.netlify.app/"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -722,7 +756,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/portf-1.png"
                 alt="portfolio-1"
@@ -730,13 +764,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Bienes Raices
                       </h3>
@@ -749,14 +783,16 @@
                       href="https://github.com/aresmiiro/fin-raices"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://ares-bienes-raices.netlify.app/"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -771,7 +807,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/Videogames.png"
                 alt="portfolio-1"
@@ -779,13 +815,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Videogames Blog
                       </h3>
@@ -798,14 +834,16 @@
                       href="https://github.com/aresmiiro/10Proyecto.-Blog-Videojuegos"
                       target="_blank"
                     >
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a
                       href="https://blog-videojuegos-ares.netlify.app/"
                       target="_blank"
                     >
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -818,7 +856,7 @@
                 </div>
               </div>
             </div>
-            <div class="s-card" href="#">
+            <div class="s-card shadow-pink" href="#">
               <img
                 src="/public/img/Restaurant Sushi.png"
                 alt="portfolio-1"
@@ -826,13 +864,13 @@
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc">
+                  <svg class="s-card-arc dark:fill-bgdark fill-white">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
                     <div class="float-left">
                       <h3
-                        class="text-xl ml-4 justify-centera items-center text-text-dark"
+                        class="text-xl ml-4 justify-centera items-center dark:text-text-dark text-purple"
                       >
                         Sushi Restaurant
                       </h3>
@@ -842,11 +880,13 @@
                     class="flex float-right gap-5 justify-center items-center"
                   >
                     <a href="https://github.com/aresmiiro/sushi-restaurant">
-                      <i class="text-text-dark fa-brands fa-github fa-xl"></i>
+                      <i
+                        class="dark:text-text-dark text-orange fa-brands fa-github fa-xl"
+                      ></i>
                     </a>
                     <a href="https://sushi-restaurant-ares.netlify.app">
                       <i
-                        class="text-text-dark mr-5 fa-solid fa-desktop fa-xl"
+                        class="dark:text-text-dark text-orange mr-5 fa-solid fa-desktop fa-xl"
                       ></i>
                     </a>
                   </div>
@@ -867,13 +907,13 @@
 
       <!-- --------- Contact Section --------- -->
       <section
-        class="w-full h-auto flex items-center justify-center flex-col mt-48 mb-32"
+        class="w-full h-auto flex items-center justify-center flex-col mt-48 mb-32 lg:mb-20"
         id="contacto"
       >
         <div class="container-contact">
           <div class="w-full flex items-center justify-center flex-col">
             <h3
-              class="text-2xl font-normal font-subtitle text-text-dark flex justify-center pb-1 items-center"
+              class="text-2xl font-normal font-subtitle dark:text-text-dark text-text-light flex justify-center pb-1 items-center"
             >
               Contact
             </h3>
@@ -883,7 +923,7 @@
               Get in touch
             </h2>
             <p
-              class="mr-0 flex flex-col items-center r p-10 text-text-dark justify-center item-center text-lg"
+              class="mr-0 flex flex-col items-center r p-10 dark:text-text-dark text-text-light justify-center item-center text-lg"
             >
               If you wanna get in touch, talk about a project or a job or just
               sey hello, you can find me on:
@@ -899,14 +939,14 @@
                 target="_blank"
               >
                 <i
-                  class="text-text-dark hover:text-orange fab fa-github fa-2x"
+                  class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fab fa-github fa-2x"
                 ></i>
               </a>
             </div>
             <div class="icon-container">
               <a href="https://www.instagram.com/devaressm/" target="_blank">
                 <i
-                  class="text-text-dark hover:text-orange fab fa-instagram fa-2x"
+                  class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fab fa-instagram fa-2x"
                 ></i>
               </a>
             </div>
@@ -916,14 +956,14 @@
                 target="_blank"
               >
                 <i
-                  class="text-text-dark hover:text-orange fab fa-linkedin-in fa-2x"
+                  class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fab fa-linkedin-in fa-2x"
                 ></i>
               </a>
             </div>
             <div class="icon-container">
               <a href="mailto:aresmiros@gmail.com">
                 <i
-                  class="text-text-dark hover:text-orange fa-solid fa-envelope fa-2x"
+                  class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fa-solid fa-envelope fa-2x"
                 ></i>
               </a>
             </div>
@@ -934,25 +974,29 @@
 
     <!-- --------- Footer Seccion --------- -->
 
-    <footer class="w-screen h-auto flex flex-col justify-center items-center">
+    <footer
+      class="w-screen h-auto flex flex-col lg:flex-row justify-center items-center"
+    >
       <div
-        class="w-4/5 flex flex-col items-center justify-center shadow-pink mb-20"
+        class="w-4/5 flex flex-col lg:flex-row lg:justify-around items-center justify-center shadow-pink mb-20"
       >
         <img
           class="w-[250px] h-[250px] p-0 m-0"
           src="/public/img/Ares Big Dark Mode.svg"
           alt="logo ares"
         />
-        <p class="text-text-dark text-lgs justify-center items-center mb-20">
+        <p
+          class="dark:text-text-dark text-text-light text-lgs justify-center items-center mb-20 lg:mb-0"
+        >
           &copy; Made with lots of love
         </p>
-        <div class="mb-10">
+        <div class="mb-10 lg:mb-0">
           <ul class="flex flex-row justify-center items-center">
             <li>
               <a
                 href="https://github.com/aresmiiro"
                 target="_blank"
-                class="m-4 text-text-dark w-8 h-8"
+                class="m-4 dark:text-text-dark text-bgdark w-8 h-8"
               >
                 <i class="fab fa-github fa-2x"></i>
               </a>
@@ -961,7 +1005,7 @@
               <a
                 href="https://www.instagram.com/devaressm/"
                 target="_blank"
-                class="m-4 text-text-dark w-8 h-8 justify-center item-center"
+                class="m-4 dark:text-text-dark text-bgdark w-8 h-8 justify-center item-center"
               >
                 <i class="fab fa-instagram fa-2x"></i>
               </a>
@@ -970,7 +1014,7 @@
               <a
                 href="https://www.linkedin.com/in/ares-mir%C3%B3-serra-454241170/"
                 target="_blank"
-                class="m-4 text-text-dark w-8 h-8 justify-center item-centers"
+                class="m-4 dark:text-text-dark text-bgdark w-8 h-8 justify-center item-centers"
               >
                 <i class="fab fa-linkedin-in fa-2x"></i>
               </a>
@@ -979,7 +1023,7 @@
               <a
                 href="mailto:aresmiros@gmail.com"
                 target="_blank"
-                class="m-4 text-text-dark w-8 h-8 justify-center item-center"
+                class="m-4 dark:text-text-dark text-bgdark w-8 h-8 justify-center item-center"
               >
                 <i class="fa-solid fa-envelope fa-2x"></i>
               </a>
