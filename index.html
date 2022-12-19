@@ -39,11 +39,11 @@
     <title>Ares Porfolio</title>
   </head>
   <body
-    class="dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] dark:bg-bgdark font-subtitle dark"
+    class="dark:from-bgdark dark:to-bgdark dark:bg-gradient-to-r bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] font-subtitle overflow-x-hidden"
   >
     <header class="fixed top-0 left-0 w-full z-40">
       <nav
-        class="b border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-white dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] dark:bg-bgdark"
+        class="px-2 sm:px-4 py-2.5 fixed w-full z-20 shadow-md top-0 left-0 bg-white dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] min-h-[120px]"
       >
         <div
           class="container flex flex-wrap items-center justify-between mx-auto"
@@ -51,69 +51,72 @@
           <a href="/" class="flex items-center">
             <img
               src="/img/Ares Small Logo.svg"
-              class="h-24 mr-3"
+              class="h-24 md:h-32"
               alt="Ares Logo"
             />
           </a>
-          <button
-            data-collapse-toggle="navbar"
-            type="button"
-            class="inline-flex items-center p-2 ml-3 text-lg rounded-lg md:hidden hover:bg-gray-100 focus:outline-none bg-transparent text-purple dark:text-orange dark:hover:bg-[#0b0226]"
-            aria-controls="navbar"
-            aria-expanded="false"
-            id="menu-toggle"
+          <div class="flex md:order-2 gap-4 items-center">
+            <label class="theme-switch">
+              <input for="dark-mode" type="checkbox" id="dark-mode" />
+              <span class="theme-slider"></span>
+            </label>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-lg rounded-full md:hidden dark:hover:bg-orange dark:hover:bg-opacity-10 hover:bg-opacity-10 hover:bg-purple focus:outline-none bg-transparent text-purple dark:text-orange"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+              id="menu-toggle"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar"
           >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar">
             <ul
-              class="flex flex-col p-4 mt-4 justify-center items-center border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-transparent dark:bg-bgdark md:dark:bg-bgdark"
+              class="flex flex-col p-1 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium gap-2"
             >
-              <li>
+              <li class="flex items-center justify-center">
                 <a href="#home" class="bubbly-btn w-min hover:text-orange"
                   >Home</a
                 >
               </li>
-              <li>
+              <li class="flex items-center justify-center">
                 <a href="#about" class="bubbly-btn w-min hover:text-orange"
                   >About</a
                 >
               </li>
-              <li>
+              <li class="flex items-center justify-center">
                 <a href="#skills" class="bubbly-btn w-min hover:text-orange"
                   >Skills</a
                 >
               </li>
-              <li>
+              <li class="flex items-center justify-center">
                 <a href="#portfolio" class="bubbly-btn w-min hover:text-orange"
-                  >Portfolio</a
+                  >Projects</a
                 >
               </li>
-              <li>
+              <li class="flex items-center justify-center">
                 <a href="#contacto" class="bubbly-btn w-min hover:text-orange"
                   >Contact</a
                 >
               </li>
             </ul>
-            <div class="flex item-end md:justify-center top-2 right-2">
-              <label class="theme-switch">
-                <input type="checkbox" />
-                <span class="theme-slider"></span>
-              </label>
-            </div>
           </div>
         </div>
       </nav>
@@ -122,11 +125,11 @@
     <main>
       <!-- --------- Showcase Area Section --------- -->
       <section
-        class="w-100 h-screen overflow-hidden mt-20 flex flex-row justify-center items-center"
+        class="w-100 overflow-hidden flex flex-row justify-center items-center pt-[150px]"
         id="home"
       >
         <div
-          class="flex flex-col w-full h-screen justify-center items-center relative lg:flex-row lg:gap-32"
+          class="flex flex-col w-full justify-center items-center relative lg:flex-row lg:gap-32 xl:gap-40 px-10"
         >
           <div class="w-100 items-center flex flex-col justify-center">
             <h2
@@ -150,7 +153,7 @@
                 class="inline-block rounded-2xl text bg-orange dark:text-text-light dark:bg-orange text-lg transition-all 0.3s py-2 px-4 font-semibold"
                 >Hire Me</a
               >
-              <a href="/public/img/Ares Miro Front-End Developer copy.pdf">
+              <a href="/img/Ares Miro Front-End Developer copy.pdf">
                 <i
                   class="fa-regular fa-circle-down text-orange ml-3 text-3xl flex justify-center items-center"
                 ></i>
@@ -168,12 +171,10 @@
       </section>
       <!-- --------- About Section --------- -->
       <section
-        class="w-auto h- overflow-hidden flex flex-row justify-center items-center"
+        class="w-auto pt-[150px] overflow-hidden flex flex-row justify-center items-center"
         id="about"
       >
-        <div
-          class="flex flex-col w-full h-screen justify-center items-center relative"
-        >
+        <div class="flex flex-col w-full justify-center items-center relative">
           <div
             class="w-auto flex flex-col justify-center items-center justify-self-center"
           >
@@ -186,14 +187,15 @@
               &lt;I code beautiful things&gt;
             </h2>
             <div class="mr-0 flex flex-col items-center justify-center p-10">
-              <p class="text-text-light dark:text-text-dark w-full text-lg">
-                I'm a Front-End Developer and UX Designer that has a serious
-                passion for animation and creating clean, intuitive and dynamic
-                websites.
-              </p>
-              <p class="text-text-light dark:text-text-dark w-full text-lg">
-                I enjoy bringing ideas that I have on my mind to life and
-                continue discovering and learning exciting new things.
+              <p
+                class="text-text-light dark:text-text-dark w-full text-lg text-justify lg:pr-32 lg:pl-32"
+              >
+                Hello! My name is Ares and I'm a Front-End Developer and UX
+                Designer from Spain that has a serious passion for animation and
+                creating clean, intuitive and dynamic websites. I enjoy bringing
+                ideas that I have on my mind to life and discover and learn
+                exiting new things. <br />Right now I'm focused on keep learing
+                new techonlogies and working to improve my projects.
               </p>
             </div>
           </div>
@@ -207,13 +209,13 @@
         </div>
       </section>
       <!-- --------- Skills Section --------- -->
-      <section class="w-full h-auto flex-col justify-center items-center">
+      <section
+        class="w-full h-auto flex-col justify-center items-center pt-[150px]"
+        id="skills"
+      >
         <div class="skills-info flex justify-center items-center">
-          <h2
-            class="text-purple font-subtitle text-2xl font-normal flex items-center justify-center pt-40 pb-10"
-            id="skills"
-          >
-            My Skills.
+          <h2 class="text-3xl font-subtitle font-light p-0 text-purple">
+            My Skills
           </h2>
         </div>
         <div
@@ -221,13 +223,13 @@
         >
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 dark:group-hover:text-orange w-full h-full rounded-md"
               >
                 <svg
-                  class="w-20 h-20 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-20 h-20 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
                 >
@@ -238,11 +240,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-purple dark:bg-orange backdrop:dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] bg-purple dark:bg-slate-100 backdrop:dark:bg-orange transition-all duration-500 rounded-md group-hover:translate-y-0"
             >
               <div>
                 <h3
-                  class="flex justify-center items-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center items-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   HTML
                 </h3>
@@ -251,13 +253,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-20 h-20 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-20 h-20 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
                 >
@@ -268,11 +270,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   CSS
                 </h3>
@@ -281,13 +283,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-14 h-14 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-14 h-14 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
                   width="50px"
@@ -300,11 +302,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   JavaScript
                 </h3>
@@ -313,13 +315,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -334,11 +336,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   Tailwind
                 </h3>
@@ -347,13 +349,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
                 >
@@ -364,11 +366,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   Bootstrap
                 </h3>
@@ -377,13 +379,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -398,11 +400,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   Git/Github
                 </h3>
@@ -411,13 +413,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   enable-background="new 0 0 100 100"
                   viewBox="0 0 100 100"
@@ -433,11 +435,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-lg font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-lg font-bold pt-4 text-white dark:text-purple"
                 >
                   Responsive Web
                 </h3>
@@ -446,13 +448,13 @@
           </div>
           <div class="group relative cursor-pointer m-5">
             <div
-              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-bgdark transition-all duration-500 bg-slate-100 group-hover:translate-y-0 dark:group-hover:bg-bgdark rounded-md"
+              class="group relative z-10 flex h-[100px] w-[150px] translate-y-[50px] items-center justify-center dark:bg-purple transition-all duration-500 bg-slate-100 group-hover:translate-y-0 rounded-md"
             >
               <div
                 class="transition-all flex items-center justify-center duration-500 dark:group-hover:text-orange w-full h-full"
               >
                 <svg
-                  class="w-16 h-16 flex justify-center items-center dark:fill-text-dark fill-purple"
+                  class="w-16 h-16 flex justify-center items-center dark:fill-slate-100 fill-purple"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
                   width="50px"
@@ -465,11 +467,11 @@
               </div>
             </div>
             <div
-              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-orange transition-all duration-500 rounded group-hover:translate-y-0 bg-purple"
+              class="h-[60px] w-[150px] justify-center items-center -translate-y-[50px] dark:bg-slate-100 transition-all duration-500 rounded-md group-hover:translate-y-0 bg-purple"
             >
               <div>
                 <h3
-                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-text-light"
+                  class="flex justify-center text-xl font-bold pt-4 text-white dark:text-purple"
                 >
                   Sass
                 </h3>
@@ -482,16 +484,11 @@
       <!-- --------- Portfolio Section --------- -->
 
       <section
-        class="w-full h-auto grid items-center p-12 justify-center"
+        class="w-full h-auto grid items-center p-12 justify-center pt-[150px]"
         id="portfolio"
       >
         <div class="items-center flex flex-col justify-center w-full h-auto">
           <div class="flex flex-col justify-center items-center">
-            <h3
-              class="text-2xl font-normal font-subtitle p-0 dark:text-text-dark text-text-light pb-1"
-            >
-              Portfolio
-            </h3>
             <h2 class="text-3xl font-subtitle font-light p-0 text-purple">
               My projects
             </h2>
@@ -563,7 +560,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/BatataBit Porject.png"
+                src="/img/BatataBit Porject.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -659,7 +656,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/Yard Sale Project.png"
+                src="/img/Yard Sale Project.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -709,7 +706,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/Heladeria.png"
+                src="/img/Heladeria.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -758,7 +755,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/portf-1.png"
+                src="/img/portf-1.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -809,7 +806,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/Videogames.png"
+                src="/img/Videogames.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -858,7 +855,7 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/public/img/Restaurant Sushi.png"
+                src="/img/Restaurant Sushi.png"
                 alt="portfolio-1"
                 class="s-card-image"
               />
@@ -907,10 +904,10 @@
 
       <!-- --------- Contact Section --------- -->
       <section
-        class="w-full h-auto flex items-center justify-center flex-col mt-48 mb-32 lg:mb-20"
+        class="w-full h-auto flex items-center justify-center flex-col pt-[150px] mb-32 lg:mb-20"
         id="contacto"
       >
-        <div class="container-contact">
+        <div class="mb-28">
           <div class="w-full flex items-center justify-center flex-col">
             <h3
               class="text-2xl font-normal font-subtitle dark:text-text-dark text-text-light flex justify-center pb-1 items-center"
@@ -918,19 +915,19 @@
               Contact
             </h3>
             <h2
-              class="text-3xl font-subtitle font-light pl-3 text-purple flex justify-center items-center"
+              class="text-3xl font-subtitle font-light text-purple flex justify-center items-center"
             >
               Get in touch
             </h2>
             <p
               class="mr-0 flex flex-col items-center r p-10 dark:text-text-dark text-text-light justify-center item-center text-lg"
             >
-              If you wanna get in touch, talk about a project or a job or just
-              sey hello, you can find me on:
+              If you wanna get in touch, check my work or talk about a project,
+              you can find me on:
             </p>
           </div>
           <div
-            class="w-full h-60 flex item-center justify-center content-center gap-24 mt-5"
+            class="w-full flex item-center justify-center content-center gap-x-24 mt-5"
           >
             <div class="">
               <a
@@ -943,14 +940,14 @@
                 ></i>
               </a>
             </div>
-            <div class="icon-container">
+            <div>
               <a href="https://www.instagram.com/devaressm/" target="_blank">
                 <i
                   class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fab fa-instagram fa-2x"
                 ></i>
               </a>
             </div>
-            <div class="icon-container">
+            <div>
               <a
                 href="https://www.linkedin.com/in/ares-mir%C3%B3-serra-454241170/"
                 target="_blank"
@@ -960,7 +957,7 @@
                 ></i>
               </a>
             </div>
-            <div class="icon-container">
+            <div>
               <a href="mailto:aresmiros@gmail.com">
                 <i
                   class="dark:text-text-dark dark:hover:text-orange text-bgdark hover:text-orange fa-solid fa-envelope fa-2x"
@@ -982,7 +979,7 @@
       >
         <img
           class="w-[250px] h-[250px] p-0 m-0"
-          src="/public/img/Ares Big Dark Mode.svg"
+          src="/img/Ares Big Dark Mode.svg"
           alt="logo ares"
         />
         <p

@@ -4,14 +4,14 @@
 
 @layer components {
   .bubbly-btn {
-    @apply flex items-center justify-center p-3 appearance-none text-[#ad0065] rounded-xl uppercase font-normal cursor-pointer relative focus:outline-0 active:scale-90 active:bg-transparent;
+    @apply flex items-center justify-center appearance-none text-[#ad0065] rounded uppercase font-normal text-base p-2 cursor-pointer relative focus:outline-0 active:scale-90 active:bg-transparent;
     transition: transform ease-in 200ms, box-shadow ease-in 250ms;
   }
 
   .bubbly-btn:active {
     box-shadow: 0 2px 25px rgba(208, 23, 119, 0.648);
   }
-  
+
   .bubbly-btn::before,
   .bubbly-btn::after {
     @apply absolute content-[''] block w-[140%] h-full left-[-20%] transition-all ease-in-out duration-700 bg-no-repeat pointer-events-none z-50;
@@ -64,7 +64,7 @@
   }
 
   .s-card-overlay {
-    @apply absolute bottom-0 left-0 right-0 z-10 rounded-tl-[40px] translate-y-full transition-all ease-in-out duration-200 dark:bg-bgdark bg-white;
+    @apply absolute bottom-0 left-0 right-0 rounded-tl-[40px]  z-10 translate-y-full transition-all ease-in-out duration-200 dark:bg-bgdark bg-white;
   }
 
   .s-card:hover .s-card-overlay {
@@ -87,42 +87,46 @@
     @apply translate-y-0;
   }
 
-    .theme-switch {
-      @apply relative;
-      --width-of-switch: 3.5em;
-      --height-of-switch: 2em;
-      --size-of-icon: 1.4em;
-      --slider-offset: 0.3em;
-      width: var(--width-of-switch);
-      height: var(--height-of-switch);
-    }
-  
-    .theme-switch input {
-      @apply opacity-0 w-0 h-0;
-    }
-  
-    .theme-slider {
-      @apply absolute cursor-pointer inset-0 transition-all duration-300 bg-white dark:bg-[#121212];
-      box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-        0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-      background-image: linear-gradient(rgba(255, 255, 255, 0.05),
-          rgba(255, 255, 255, 0.05));
-      border-radius: 30px;
-    }
-  
-    .theme-slider:before {
-      @apply absolute content-[''] transition-all duration-500 rounded-full top-1;
-      height: var(--size-of-icon, 1.4em);
-      width: var(--size-of-icon, 1.4em);
-      left: var(--slider-offset, 0.3em);
-      background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-    }
-  
-    .theme-switch>input:checked+.theme-slider:before {
-      left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
-      background: #303136;
-      box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-    }
+  .theme-switch {
+    @apply relative;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+
+  .theme-switch input {
+    @apply opacity-0 w-0 h-0;
+  }
+
+  .theme-slider {
+    @apply absolute cursor-pointer inset-0 transition-all duration-300 bg-white dark:bg-text-light;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    );
+    border-radius: 30px;
+  }
+
+  .theme-slider:before {
+    @apply absolute content-[''] transition-all duration-500 rounded-full top-1;
+    height: var(--size-of-icon, 1.4em);
+    width: var(--size-of-icon, 1.4em);
+    left: var(--slider-offset, 0.3em);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  }
+
+  .theme-switch > input:checked + .theme-slider:before {
+    left: calc(
+      100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em))
+    );
+    background: #303136;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
 
   @keyframes top-bubbles {
     0% {
