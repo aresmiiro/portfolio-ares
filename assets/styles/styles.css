@@ -1198,12 +1198,17 @@ video {
   height: 4rem;
 }
 
-.h-auto {
-  height: auto;
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-\[80px\] {
@@ -1220,11 +1225,6 @@ video {
 
 .h-1 {
   height: 0.25rem;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .min-h-\[120px\] {
