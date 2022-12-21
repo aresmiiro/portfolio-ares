@@ -1198,11 +1198,6 @@ video {
   height: 4rem;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -2421,8 +2416,8 @@ video {
   padding: 2.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-12 {
