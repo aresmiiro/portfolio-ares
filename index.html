@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio website of Ares Miro Serra." />
+    <meta name="theme-color" content="#D4C1EA" />
     <link rel="apple-touch-icon" href="/img/favicon-dark.svg" />
     <link
       rel="stylesheet"
@@ -15,6 +16,7 @@
     <link rel="shortcut icon" href="/img/favicon-dark.svg" type="image/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" href="public/img/Ares Small Logo.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -36,22 +38,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
-    <script src="/assets/js/app.js"></script>
+    <script type="module" src="/assets/js/app.js"></script>
     <title>Ares Porfolio Website</title>
   </head>
   <body
-    class="dark:from-bgdark dark:to-bgdark dark:bg-gradient-to-r bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] font-subtitle overflow-x-hidden"
+    class="dark:from-bgdark dark:to-bgdark dark:bg-gradient-to-r bg-[#D4C1EA] font-subtitle overflow-x-hidden w-screen"
   >
-    <header class="fixed top-0 left-0 w-full z-40">
+    <header class="fixed top-0 left-0 w-screen z-40">
       <nav
-        class="px-2 sm:px-4 py-2.5 fixed w-full z-20 shadow-md top-0 left-0 bg-white dark:from-bgdark dark:to-bgdark bg-gradient-to-r from-[rgba(177,0,155,0.36)] to-[rgba(254,134,1,0.5)] min-h-[120px]"
+        class="px-2 sm:px-4 py-2.5 fixed w-screen z-20 shadow-md top-0 left-0 dark:bg-bgdark dark:backdrop-blur-lg dark:bg-opacity-20 backdrop-blur-lg min-h-[120px] bg-opacity-10 bg-[#ab00ba]"
       >
         <div
           class="container flex flex-wrap items-center justify-between mx-auto"
         >
           <a href="/" class="flex items-center">
             <img
-              src="/img/Ares Small Logo.svg"
+              src="./public/img/Ares Small Logo.svg"
               class="h-24 md:h-32"
               alt="Ares Logo"
             />
@@ -123,10 +125,10 @@
       </nav>
     </header>
 
-    <main>
+    <main class="w-screen min-h-screen">
       <!-- --------- Showcase Area Section --------- -->
       <section
-        class="w-100 overflow-hidden flex flex-row justify-center items-center pt-[150px]"
+        class="w-100 overflow-hidden flex flex-row justify-center items-center pt-[150px] md:mt-20"
         id="home"
       >
         <div
@@ -155,7 +157,7 @@
                 >Hire Me</a
               >
               <a
-                href="/img/Ares Miro Front-End Developer copy.pdf"
+                href="public/img/Ares Miro Dev .pdf"
                 aria-label="Check my resume"
               >
                 <i
@@ -164,9 +166,9 @@
               </a>
             </div>
           </div>
-          <div class="w-[400px] lg:w-[550px] justify-center items-center">
+          <div class="w-[350px] lg:w-[550px] justify-center items-center">
             <img
-              src="/img/young-woman-laptop-dark.svg"
+              src="public/img/young-woman-laptop-dark.svg"
               class="img"
               alt="working-woman"
             />
@@ -203,9 +205,9 @@
               </p>
             </div>
           </div>
-          <div class="w-[400px] justify-center items-center">
+          <div class="w-[350px] flex justify-center items-center">
             <img
-              src="/img/young-woman-working-dark.svg"
+              src="public/img/young-woman-working-dark.svg"
               class="img-about"
               alt="web"
             />
@@ -488,27 +490,27 @@
       <!-- --------- Portfolio Section --------- -->
 
       <section
-        class="w-full h-auto grid items-center p-12 justify-center pt-[150px]"
+        class="w-full h-auto grid items-center justify-center pt-[150px]"
         id="portfolio"
       >
-        <div class="items-center flex flex-col justify-center w-full h-auto">
+        <div class="items-center flex flex-col w-full">
           <div class="flex flex-col justify-center items-center">
             <h2 class="text-3xl font-subtitle font-light p-0 text-purple">
               My projects
             </h2>
           </div>
           <div
-            class="grid grid-cols-fluid gap-20 items-center justify-center mt-14"
+            class="grid gap-10 items-center justify-center mt-14 w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-8"
           >
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/All Ways Project.png"
+                src="public/img/All Ways Project.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -566,13 +568,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/BatataBit Porject.png"
+                src="public/img/BatataBit Porject.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -617,13 +619,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/Apple.png"
+                src="public/img/Apple.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -669,13 +671,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/Yard Sale Project.png"
+                src="public/img/Yard Sale Project.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -721,13 +723,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/Heladeria.png"
+                src="public/img/Heladeria.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -772,13 +774,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/portf-1.png"
+                src="public/img/portf-1.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -825,13 +827,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/Videogames.png"
+                src="public/img/Videogames.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -876,13 +878,13 @@
             </div>
             <div class="s-card shadow-pink" href="#">
               <img
-                src="/img/Restaurant Sushi.png"
+                src="public/img/Restaurant Sushi.webp"
                 alt="portfolio-1"
                 class="s-card-image"
               />
               <div class="s-card-overlay">
                 <div class="s-card-header">
-                  <svg class="s-card-arc dark:fill-bgdark fill-white">
+                  <svg class="s-card-arc dark:fill-bgdark fill-[#f7f0ff]">
                     <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
                   </svg>
                   <div class="s-card-header-text flex w-full">
@@ -933,7 +935,7 @@
 
       <!-- --------- Contact Section --------- -->
       <section
-        class="w-full h-auto flex items-center justify-center flex-col pt-[150px] mb-32 lg:mb-20"
+        class="w-full h-auto flex items-center justify-center flex-col pt-[150px] mb-20 lg:mb-20"
         id="contacto"
       >
         <div class="mb-28">
@@ -956,7 +958,7 @@
             </p>
           </div>
           <div
-            class="w-full flex item-center justify-center content-center gap-x-24 mt-5"
+            class="w-full flex item-center justify-center content-center gap-x-16"
           >
             <div class="">
               <a
@@ -1014,15 +1016,16 @@
       class="w-screen h-auto flex flex-col lg:flex-row justify-center items-center"
     >
       <div
-        class="w-4/5 flex flex-col lg:flex-row lg:justify-around items-center justify-center shadow-pink mb-20"
+        class="w-4/5 lg:h-44 lg:w-10/12 flex flex-col lg:flex-row justify-between gap-10 lg:justify-around items-center shadow-pink mb-20"
       >
         <img
-          class="w-[250px] h-[250px] p-0 m-0"
-          src="/img/Ares Big Dark Mode.svg"
+          class="w-[80px] h-[80px] mt-6 flex justify-center items-center lg:mt-0"
+          src="public/img/Ares Big Dark Mode-cropped.svg"
           alt="logo ares"
         />
+
         <p
-          class="dark:text-text-dark text-text-light text-lgs justify-center items-center mb-20 lg:mb-0"
+          class="dark:text-text-dark text-text-light text-lgs justify-center items-center lg:mb-0"
         >
           &copy; Made with lots of love
         </p>
@@ -1072,5 +1075,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="/assets/js/tailwind.js"></script>
   </body>
 </html>
