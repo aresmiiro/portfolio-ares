@@ -56,7 +56,7 @@
   }
 
   .s-card {
-    @apply relative block h-full rounded-xl overflow-hidden;
+    @apply relative block h-auto rounded-xl overflow-hidden;
   }
 
   .s-card-image {

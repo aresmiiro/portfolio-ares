@@ -645,7 +645,7 @@ video {
 .s-card {
   position: relative;
   display: block;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 0.75rem;
 }
