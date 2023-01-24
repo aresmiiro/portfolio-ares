@@ -4,7 +4,7 @@
 
 @layer components {
   .bubbly-btn {
-    @apply flex items-center justify-center appearance-none text-purple rounded uppercase font-normal text-base p-2 cursor-pointer relative focus:outline-0 active:scale-90 active:bg-transparent;
+    @apply flex items-center justify-center appearance-none text-purple rounded uppercase font-normal md:font-semibold tracking-wider md:text-base text-base p-2 cursor-pointer relative focus:outline-0 active:scale-90 active:bg-transparent;
     transition: transform ease-in 200ms, box-shadow ease-in 250ms;
   }
 
